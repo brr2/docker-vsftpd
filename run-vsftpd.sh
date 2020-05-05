@@ -41,6 +41,16 @@ echo "reverse_lookup_enable=${REVERSE_LOOKUP_ENABLE}" >> /etc/vsftpd/vsftpd.conf
 echo "pasv_promiscuous=${PASV_PROMISCUOUS}" >> /etc/vsftpd/vsftpd.conf
 echo "port_promiscuous=${PORT_PROMISCUOUS}" >> /etc/vsftpd/vsftpd.conf
 
+echo "ssl_enable=${SSL_ENABLE}" >> /etc/vsftpd/vsftpd.conf
+echo "allow_anon_ssl=${ALLOW_ANON_SSL}" >> /etc/vsftpd/vsftpd.conf
+echo "force_local_data_ssl=${FORCE_LOCAL_DATA_SSL}" >> /etc/vsftpd/vsftpd.conf
+echo "force_local_logins_ssl=${FORCE_LOCAL_LOGINS_SSL}" >> /etc/vsftpd/vsftpd.conf
+echo "ssl_tlsv1=${SSL_TLSv1}" >> /etc/vsftpd/vsftpd.conf
+echo "ssl_sslv2=${SSL_SSLv2}" >> /etc/vsftpd/vsftpd.conf
+echo "ssl_sslv3=${SSL_SSLv3}" >> /etc/vsftpd/vsftpd.conf
+echo "rsa_cert_file=${RSA_CERT_FILE}" >> /etc/vsftpd/vsftpd.conf
+echo "rsa_private_key_file=${RSA_PRIVATE_KEY_FILE}" >> /etc/vsftpd/vsftpd.conf
+
 # Get log file path
 export LOG_FILE=`grep xferlog_file /etc/vsftpd/vsftpd.conf|cut -d= -f2`
 
