@@ -48,6 +48,7 @@ echo "force_local_logins_ssl=${FORCE_LOCAL_LOGINS_SSL}" >> /etc/vsftpd/vsftpd.co
 echo "ssl_tlsv1=${SSL_TLSv1}" >> /etc/vsftpd/vsftpd.conf
 echo "ssl_sslv2=${SSL_SSLv2}" >> /etc/vsftpd/vsftpd.conf
 echo "ssl_sslv3=${SSL_SSLv3}" >> /etc/vsftpd/vsftpd.conf
+echo "ssl_ciphers=${SSL_CIPHERS}" >> /etc/vsftpd/vsftpd.conf
 echo "rsa_cert_file=${RSA_CERT_FILE}" >> /etc/vsftpd/vsftpd.conf
 echo "rsa_private_key_file=${RSA_PRIVATE_KEY_FILE}" >> /etc/vsftpd/vsftpd.conf
 
